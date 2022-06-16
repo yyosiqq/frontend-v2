@@ -60,7 +60,7 @@ const app = createApp(Root)
 registerDirectives(app);
 registerGlobalComponents(app);
 initSentry(app);
-
+window.document.querySelector('#app-preloader')?.remove();
 app.mount('#app');
 
 export default app;
